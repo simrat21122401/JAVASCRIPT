@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>WELCOME TO MY JAVASCRIPT CODE</h1>
+    <button
+      onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    
+    "
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="
+    cartQuantity=cartQuantity+1
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    
+    "
+    >
+      Add to Cart
+    </button>
+    <button
+      onclick="
+    cartQuantity=cartQuantity+2
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    
+    "
+    >
+      +2
+    </button>
+    <button
+      onclick="
+    cartQuantity=cartQuantity+3
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    
+    "
+    >
+      +3
+    </button>
+    <button
+      onclick="
+    cartQuantity=cartQuantity+4
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    
+    "
+    >
+      +4
+    </button>
+    <button
+      onclick="
+    cartQuantity=cartQuantity+5
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    
+    "
+    >
+      +5
+    </button>
+    <button
+      onclick="
+  cartQuantity=cartQuantity-2
+  
+console.log(`Cart Quantity decreased:${cartQuantity}`)
+  "
+    >
+      -2
+    </button>
+    <button
+      onclick="
+  cartQuantity=cartQuantity-3
+  
+console.log(`Cart Quantity decreased:${cartQuantity}`)
+  "
+    >
+      -3
+    </button>
+    <button
+      onclick="
+    cartQuantity=cartQuantity-1
+    console.log(`Cart Quantity Removed:${cartQuantity}`);
+    
+    "
+    >
+      Remove By Cart
+    </button>
+    <button
+      onclick="
+    cartQuantity=0
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    console.log('Cart was reset');
+    "
+    >
+      Reset Cart
+    </button>
+
+    <!-- <script src="first.js"></script> -->
+    <!-- <script src="second.js"></script> -->
+    <script>
+      let name = "hello panda";
+      console.log(`My name is: ${name}`);
+
+      //CALCUATION FOR 5C
+      let coffee = 5;
+      let bagles = 3;
+      let soup = 9;
+      let cost = coffee + bagles * 3 + soup;
+      console.log(`$${cost}`);
+
+      //
+      let tax = 10;
+      console.log(`${(cost * tax) / 100}`);
+      console.log(`${tax / 100}%`);
+      //
+      let totalCost = `${cost + tax / 100}`;
+      console.log(totalCost);
+
+      //
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>

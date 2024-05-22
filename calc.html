@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><input type="text" id="res" /></p>
+    <p>
+      <button
+        onclick="calculation=calculation+1
+      console.log(calculation)
+      
+      "
+      >
+        7
+      </button>
+      <button
+        onclick="calculation=calculation+2
+      console.log(calculation)
+      "
+      >
+        8
+      </button>
+      <button
+        onclick="calculation=calculation+3
+      console.log(calculation)
+      "
+      >
+        9
+      </button>
+      <button
+        onclick="calculation=calculation+4
+      console.log(calculation)
+      "
+      >
+        <!-- +
+      </button>
+      <button
+        onclick="calculation+='-'
+      console.log(calculation)"
+      >
+        -
+      </button>
+      <button
+        onclick="calculation+='/'
+      console.log(calculation)"
+      >
+        /
+      </button>
+      <button
+        onclick="calculation+='*'
+      console.log(calculation)"
+      > -->
+        *
+      </button>
+      <button
+        onclick="
+    calculation = eval(calculation);
+    console.log(calculation);
+  "
+      >
+        =
+      </button>
+      <button
+        onclick="
+      console.log(`${calculation=''}`)
+      console.log('cleared')
+      var inp = document.getElementById('res');
+  inp.value = '';
+      "
+      >
+        AC
+      </button>
+    </p>
+
+    <script>
+      let calculation = "";
+      function Result() {
+        var num1 = document.getElementById("res").value;
+        var num2 = eval(num1);
+        document.getElementById("res").value = num2;
+      }
+    </script>
+  </body>
+</html>
